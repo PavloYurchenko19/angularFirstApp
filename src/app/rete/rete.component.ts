@@ -11,8 +11,8 @@ export class ReteComponent implements OnInit {
   firstCurrency: string = 'USD';
   secondCurrency: string = 'UAH';
   convertCurrency: string | number;
-  convertCurrencyTwo: string | number;
-  firstNumber: string;
+  convertCurrencyTwo: string | number = 1;
+  firstNumber: string = '1';
   secondNumber: string;
   dollar: number;
   euro: number;
@@ -24,7 +24,6 @@ export class ReteComponent implements OnInit {
     this.reteService.getRete().subscribe(res => {
       const {results} = res;
       this.rete = Object.entries(results)
-      console.log(this.rete[134][0]);
     })
 
     this.reteService.getDollar().subscribe(usd => {
