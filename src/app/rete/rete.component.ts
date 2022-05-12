@@ -24,6 +24,7 @@ export class ReteComponent implements OnInit {
     this.reteService.getRete().subscribe(res => {
       const {results} = res;
       this.rete = Object.entries(results)
+      console.log(this.rete[134][0]);
     })
 
     this.reteService.getDollar().subscribe(usd => {

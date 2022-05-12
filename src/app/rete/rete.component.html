@@ -24,7 +24,7 @@
 
       <div class="exchange">
         <select #click (change)="onClick(click)">
-          <option [value]="firstCurrency">USD</option>
+          <option [value]="rete[136][0]">USD</option>
           <option *ngFor="let currency of rete">{{currency[0]}}
           </option>
         </select>
@@ -40,7 +40,7 @@
         </form>
 
         <select #clicks (click)="onClickSecond(clicks)">
-          <option [value]="secondCurrency">UAH</option>
+          <option [value]="rete[134][0]">UAH</option>
           <option *ngFor="let currency of rete">{{currency[0]}}</option>
         </select>
 
