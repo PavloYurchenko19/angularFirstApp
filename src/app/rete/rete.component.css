@@ -1,0 +1,78 @@
+header {
+  background: dimgrey;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.box__exchange {
+  width: 880px;
+  height: 340px;
+  position: absolute;
+  background: #e4e4e4;
+  box-shadow: gray 0 0 10px;
+  border-radius: 50%;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 200px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+
+.exchange {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  text-align: center;
+  font-size: 20px;
+  height: 50px;
+  margin: 10px;
+}
+
+select {
+  height: 55px;
+  width: 60px;
+  background: gray;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+nav:hover {
+  cursor: pointer;
+}
+
+.title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-bottom: 30px;
+  font-size: 19px;
+}
+
+footer {
+  float: bottom;
+}
+
+

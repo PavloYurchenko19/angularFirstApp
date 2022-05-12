@@ -1,0 +1,53 @@
+<header>
+  <div class="dollar__Euro">
+    <h2>Dollar: {{dollar}} to UAH</h2>
+    <h2>Euro: {{euro}} to UAH</h2>
+  </div>
+
+  <div>
+    <h2>EXCHANGER</h2>
+  </div>
+
+  <div>
+    <nav>Login</nav>
+    <nav>Documentation</nav>
+    <nav>Contact</nav>
+  </div>
+
+</header>
+<div class="main">
+  <div class="box__exchange">
+    <div>
+      <div class="title">
+        <h3>Please choose currencies</h3>
+      </div>
+
+      <div class="exchange">
+        <select #click (change)="onClick(click)">
+          <option [value]="firstCurrency">USD</option>
+          <option *ngFor="let currency of rete">{{currency[0]}}
+          </option>
+        </select>
+
+        <form #val (keyup)="onSubmit(val)">
+          <input type="number" min="1" name="inputOne" [value]="convertCurrencyTwo" class="form-control">
+        </form>
+
+        <img src="assets/foto/exgenger.png" alt="">
+
+        <form #e (change)="onSubmitTwo(e)">
+          <input type="number" name="inputTwo" min="1" [value]="convertCurrency" class="form-control">
+        </form>
+
+        <select #clicks (click)="onClickSecond(clicks)">
+          <option [value]="secondCurrency">UAH</option>
+          <option *ngFor="let currency of rete">{{currency[0]}}</option>
+        </select>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
