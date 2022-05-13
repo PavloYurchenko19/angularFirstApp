@@ -35,7 +35,7 @@
 
         <img src="assets/foto/exgenger.png" alt="">
 
-        <form #e (change)="onSubmitTwo(e)">
+        <form #e (keyup)="onSubmitTwo(e)">
           <input type="number" name="inputTwo" min="1" [value]="convertCurrency" class="form-control">
         </form>
 
